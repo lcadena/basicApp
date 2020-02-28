@@ -37,6 +37,10 @@ app.get('/message/:msn', (req, res) => {
     return res.status(200).send('El mensaje es ' + msn1);
 });
 
+app.get('/testing', (req, res) => {
+    return res.status(200).send('prueba andrea');
+});
+
 /** Load an HTML of the single app with angular **/
 app.all('*', (req, res) => {
     //res.sendFile('../index.html')
